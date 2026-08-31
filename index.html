@@ -5,37 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Blog</title>
-   <style>
-      header {
-         background-color: #183C63;
-         color: #FFFFFF;
-         text-align: center;
-         max-width: 800px;
-         margin: 0 auto;
-         padding: 16px;
-         border: #170f86e0;
-      }
-
-      main {
-         background-color: #FFFFFF;
-         color: #183C63;
-         max-width: 800px;
-         margin: 0 auto;
-         padding: 16px;
-      }
-      article{
-      display: flex;
-      }
-
-      img {
-         width: 80px;
-         height: 80px;
-      }
-
-      div p {
-         font-weight: bold;
-      }
-   </style>
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -60,44 +30,57 @@
          </article>
       <article>
 
-         <img src="imagem-blog.png" alt="Ícone moderno em tons de azul combinando um chapéu de formatura e uma engrenagem com circuitos digitais,
+         <img src="imagem-blog.png" 
+         alt="Ícone moderno em tons de azul combinando um chapéu de formatura e uma engrenagem com circuitos digitais,
          com uma lâmpada ao centro representando ideias e inovação na interseção entre tecnologia e educação.">
          <div>
             
-            <h2>Meu segundo post</h2>
+            <h2> O primeiro disco rígido</h2>
             <p>Por: Ana Francez</p>
-            <p>Bem vindos ao meu novo Blog! Aqui vou mostrar algumas dicas de programação e curiosiedades da area de
-               tecnologia</p>
+            <p>o IBM 350, lançado em 1956, tinha cerca de 5 MB de capacidade e ocupava o espaço de um armário grande.
+               Hoje, até uma foto de celular pode ter vários megabytes.</p>
                <button>💙 <span>0</span>​</button>
                <button>👍​ <span>0</span>​</button>
             </div>
          </article>
+         <article>
 
+            <img src="disco-blog.avif" alt="Ícone moderno em tons de azul combinando um chapéu de formatura e uma engrenagem com circuitos digitais,
+            com uma lâmpada ao centro representando ideias e inovação na interseção entre tecnologia e educação.">
+            <div>
+               
+               <h2>O primeiro celular portátil</h2>
+               <p>Por: Ana Francez</p>
+               <p>o Motorola DynaTAC 8000X chegou ao mercado em 1983. Pesava cerca de 1 kg, 
+                  levava aproximadamente 10 horas para carregar e oferecia apenas cerca de 30 minutos de conversação.</p>
+                  <button>💙 <span>0</span>​</button>
+                  <button>👍​ <span>0</span>​</button>
+               </div>
+            </article>
+         <article>
+   
+            <img src="primeiro.telefone.webp" 
+            alt="Ícone moderno em tons de azul combinando um chapéu de formatura e uma engrenagem com circuitos digitais,
+            com uma lâmpada ao centro representando ideias e inovação na interseção entre tecnologia e educação.">
+            <div>
+               
+               <h2>A primeira webcam</h2>
+               <p>Por: Ana Francez</p>
+               <p>uma das primeiras webcams famosas foi criada na Universidade de Cambridge para monitorar uma cafeteira.
+                Os pesquisadores queriam saber se ainda havia café sem precisar ir até a máquina.</p>
+                  <button>💙 <span>0</span>​</button>
+                  <button>👍​ <span>0</span>​</button>
+               </div>
+            </article>
+
+            <img src="webcam.png" 
+            alt="Ícone moderno em tons de azul combinando um chapéu de formatura e uma engrenagem com circuitos digitais,
+            com uma lâmpada ao centro representando ideias e inovação na interseção entre tecnologia e educação.">
+            <div>
    </main>
+
+   <script src="script.js"></script>
 </body>
-<script>
-   const botoes = document.querySelectorAll("button");
 
-   botoes.forEach(function (botao) {
-      let curtiu = false;
-      botao.addEventListener("click", botaoClicado);
-      function botaoClicado() {
-         console.log("fui clicado");
-         let texto = botao.querySelector("span");
-         if (curtiu === false){
-            texto.textContent++;
-            curtiu = true;
-         } else{
-            texto.textContent--;
-            curtiu = false;
-
-         }
-
-         }
-
-   })
-
-
-</script>
 
 </html>
